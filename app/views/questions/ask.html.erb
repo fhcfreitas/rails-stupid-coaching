@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Stupid Coaching</h2>
+
+  <form action="/answer" data-turbo="false">
+    <label for="user_question" class="form-label">Ask your coach anything:</label>
+    <div class="d-flex">
+      <input type="text" name="question" placeholder='Write a question' class="form-control" id="user_question" value='<%= params[:question] %>'>
+      <input type="submit" value="Ask!" class='btn btn-primary'>
+    </div>
+  </form>
+</div>
